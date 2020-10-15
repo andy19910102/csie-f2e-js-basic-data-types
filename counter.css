@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.counter-container {
+    padding: 50px 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.counter-ui {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.counter-btn {
+    width: 50px;
+    border: none;
+    font-size: 30px;
+    line-height: 1;
+    border-radius: 3px;
+    background-color: #0cb9c1;
+}
+
+.counter-btn:hover {
+    background-color: #0badb6;
+}
+
+.counter-btn:active {
+    background-color: #0a9aa1;
+    box-shadow: 0 0 0 2px #0a99a1ab;
+}
+
+.counter-btn:focus {
+    outline: none;
+}

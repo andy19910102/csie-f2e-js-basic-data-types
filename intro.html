@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自我介紹產生器</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
 </head>
 
 <body>
-    <form id="introForm">
-        <label for="userNameInput">名字</label>
-        <input id="userNameInput" type="text">
-        <br>
-        <label for="userAgeInput">年齡</label>
-        <input id="userAgeInput" type="text">
-        <br>
-        <button type="submit">產生自我介紹</button>
-    </form>
-    <div id="introResult"></div>
+    <div class="container py-5">
+        <form id="introForm">
+            <label for="userNameInput">名字</label>
+            <input id="userNameInput" type="text" class="form-control" required>
+            <br>
+            <label for="userAgeInput">年齡</label>
+            <input id="userAgeInput" type="text" class="form-control" required>
+            <br>
+            <button class="btn btn-info" type="submit">產生自我介紹</button>
+        </form>
+        <!-- 用於顯示自我介紹的區塊 -->
+        <div id="introResult">
+    
+        </div>
+    </div>
+    
     <script src="./intro.js"></script>
 </body>
 
