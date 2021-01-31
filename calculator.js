@@ -9,7 +9,6 @@ const reportDiv = document.getElementById('result');
 
 scoreForm.addEventListener('submit', function (e) {
     // 防止表單重整畫面
-    e.preventDefault();
     // TODO: 取得各科目成績
 
     // TODO: 計算總分
