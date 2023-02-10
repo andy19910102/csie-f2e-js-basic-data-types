@@ -8,13 +8,31 @@
 // Function: 儲存函數
 
 const stars = "*".repeat(10);
-
-console.log(stars, "DataTypes", stars); // ********** DataTypes **********
+// Data types
+console.log(stars, "DataTypes", stars);
 console.log(typeof "Hello World"); // string
 console.log(typeof 12000); // number
 console.log(typeof true, typeof false); // boolean boolean
 console.log(typeof { name: "Benson", age: 32, city: "台北市" }); // object
-console.log(stars, "DataTypes", stars); // ********** DataTypes **********
+
+// String
+console.log(stars, "String", stars);
+const userName = "Benson";
+const userCity = "台北市";
+const userOccupation = "律師";
+const userIntro = `Hi，我的名字是${userName}是一個住在${userCity}的${userOccupation}。`
+console.log(userIntro);
+console.log(typeof userIntro);
+console.log(userIntro.length);
+
+// Number
+console.log(stars, "Number", stars);
+const a = 10
+const b = 3
+const c = "10"
+
+// Boolean
+console.log(stars, "Boolean", stars);
 
 
 
