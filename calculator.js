@@ -5,7 +5,7 @@ const zhInput = document.getElementById('chineseScoreInput');
 const enInput = document.getElementById('englishScoreInput');
 const mathInput = document.getElementById('mathScoreInput');
 // 報告顯示區塊
-const reportDiv = document.getElementById('result');
+const reportOutput = document.getElementById('reportOutput');
 
 scoreForm.addEventListener('submit', function (e) {
     // 防止表單重整畫面
