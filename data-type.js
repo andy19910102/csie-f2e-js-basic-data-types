@@ -7,9 +7,14 @@
 // Object: 儲存一個多組鍵/值配對值，可用於表達各種複雜資料。
 // Function: 儲存函數
 
-console.log("*".repeat(40));
+const stars = "*".repeat(10);
+
+console.log(stars, "DataTypes", stars); // ********** DataTypes **********
 console.log(typeof "Hello World"); // string
 console.log(typeof 12000); // number
 console.log(typeof true, typeof false); // boolean boolean
 console.log(typeof { name: "Benson", age: 32, city: "台北市" }); // object
-console.log("*".repeat(40));
+console.log(stars, "DataTypes", stars); // ********** DataTypes **********
+
+
+
