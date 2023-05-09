@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic Data Types</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="bg-dark text-white text-center">
+        <div class="container">
+            <h1>
+                <img src="./favicon.png" height="40" alt=""> JavaScript Basic Data Types
+            </h1>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- section -->
+    <section class="py-5">
+        <div class="container">
+            <div>
+                <h2 class="mb-3">JavaScript 程式設計練習</h2>
+                <p>此練習檔案可至 <a href="https://enn.design/f2e/1" target="_blank"
+                        rel="noopener">https://enn.design/f2e/1</a> 下載。</p>
+                <p>相關 Bootstrap 元件使用方式請參考 <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap
+                        官方說明文件</a> 。</p>
+            </div>
+
+            <div class="row">
+                <!-- practice1 -->
+                <div class="col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            1. Hello JavaScript
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 1. Hello JavaScript -->
+                            <label class="form-label">名字</label>
+                            <input type="text" class="form-control mb-2" placeholder="請在此填入名字">
+                            <button class="btn btn-success w-100">👋 產生招呼語</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- practice1 end -->
+                <!-- practice2 -->
+                <div class="col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            2. 換個色彩換個心情
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 2. 換個色彩換個心情 -->
+                            <label for="colorPicker" class="form-label">選一個新的背景色吧</label>
+                            <input id="colorPicker" type="color" class="form-control form-control-color" value="#ffffff"
+                                title="Choose your color">
+                        </div>
+                    </div>
+                </div>
+                <!-- practice2 end -->
+                <!-- practice3 -->
+                <div class="col-md-12 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            3. 自我介紹產生器
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 2. 自我介紹產生器 -->
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label for="introName" class="form-label">名字</label>
+                                            <input id="introName" type="text" class="form-control" placeholder="請填入名字"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label for="introCity" class="form-label">城市</label>
+                                            <input id="introCity" type="text" class="form-control" placeholder="請填入城市"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label for="introJobTitle" class="form-label">職稱</label>
+                                            <input id="introJobTitle" type="text" class="form-control"
+                                                placeholder="請填入職稱" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label for="introColor" class="form-label">配色</label>
+                                            <select id="introColor" class="form-control">
+                                                <option value="">藍色</option>
+                                                <option value="">綠色</option>
+                                                <option value="">紅色</option>
+                                                <option value="">黃色</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-success">🙋 產生自我介紹 🙋‍♀️</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- practice3 end -->
+                <!-- practice4 -->
+                <div class="col-md-4  my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            4. 圖片切換器
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 4. 圖片切換器 -->
+                            <div class="mb-3">
+                                <label for="imageSelector" class="form-label">選擇圖片</label>
+                                <select id="imageSelector" class="form-control">
+                                    <option value="antelope-canyon">羚羊峽谷</option>
+                                    <option value="desert">沙漠</option>
+                                    <option value="lake">湖泊</option>
+                                    <option value="residential-area">居住區</option>
+                                    <option value="snowy-mountain">雪山</option>
+                                </select>
+                            </div>
+                            <p>預覽圖片</p>
+                            <img src="./images/antelope-canyon.jpeg" alt="" id="imagePreview" class="w-100 rounded">
+                        </div>
+                    </div>
+                </div>
+                <!-- practice4 end -->
+                <!-- practice5 -->
+                <div class="col-md-4 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            5. 數字計算
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 5. 數字計算 -->
+                            <div class="row align-items-center mb-3">
+                                <div class="col">
+                                    <input type="number" id="numberA" value="12" class="form-control">
+                                </div>
+                                <span class="number-symbol">+</span>
+                                <div class="col">
+                                    <input type="number" id="numberB" value="3" class="form-control">
+                                </div>
+                                <span class="number-symbol">=</span>
+                                <div class="col">
+                                    <input type="text" id="plusOutput" class="form-control" readonly disabled>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col">
+                                    <input type="number" id="numberC" value="12" class="form-control">
+                                </div>
+                                <span class="number-symbol">-</span>
+                                <div class="col">
+                                    <input type="number" id="numberD" value="3" class="form-control">
+                                </div>
+                                <span class="number-symbol">=</span>
+                                <div class="col">
+                                    <input type="text" id="minusOutput" class="form-control" readonly disabled>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col">
+                                    <input type="number" id="numberE" value="12" class="form-control">
+                                </div>
+                                <span class="number-symbol">x</span>
+                                <div class="col">
+                                    <input type="number" id="numberF" value="3" class="form-control">
+                                </div>
+                                <span class="number-symbol">=</span>
+                                <div class="col">
+                                    <input type="text" id="timesOutput" class="form-control" readonly disabled>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col">
+                                    <input type="number" id="numberG" value="12" class="form-control">
+                                </div>
+                                <span class="number-symbol">÷</span>
+                                <div class="col">
+                                    <input type="number" id="numberH" value="3" class="form-control">
+                                </div>
+                                <span class="number-symbol">=</span>
+                                <div class="col">
+                                    <input type="text" id="divideOutput" class="form-control" readonly disabled>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="startCalcBtn" class="btn btn-warning">🧮 開始計算</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- practice5 end -->
+                <!-- practice6 -->
+                <div class="col-md-4 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            6. BMI計算機
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 6. BMI計算機 -->
+                            <p>參考 <a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank"
+                                    rel="noopener">BMI計算公式</a>
+                                設計一個
+                                BMI 計算機
+                            </p>
+                            <form id="bmiForm">
+                                <div class="mb-3">
+                                    <label for="height" class="form-label">身高(公分)</label>
+                                    <input id="height" type="number" class="form-control" placeholder="請填入身高 EX:180"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weight" class="form-label">體重(公斤)</label>
+                                    <input id="weight" type="number" class="form-control" placeholder="請填入體重 EX:73"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary">📝 計算BMI</button>
+                                </div>
+                            </form>
+                            <div id="bmiOutput">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- practice6 end -->
+                <!-- practice7 -->
+                <div class="col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            7. 時間格式轉換
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 7. 時間格式轉換 -->
+                            <p>搭配 <a href="https://momentjs.com/" target="_blank" rel="noopener">moment.js</a>
+                                模組，點擊按鈕後將指定時間格式輸出</p>
+                            <form id="timeForm">
+                                <div class="mb-3">
+                                    <label for="timeFormatSelector" class="form-label">選擇時間格式</label>
+                                    <select id="timeFormatSelector" class="form-control">
+                                        <option value="YYYY/MM/DD HH:mm:ss">YYYY/MM/DD HH:mm:ss</option>
+                                        <option value="DD/MM/YYYY HH:mm:ss">DD/MM/YYYY HH:mm:ss</option>
+                                        <option value="YYYY.MM.DD HH:mm:ss">YYYY.MM.DD HH:mm:ss</option>
+                                        <option value="YYYY 年 MM 月 DD 日 HH:mm:ss">YYYY 年 MM 月 DD 日 HH:mm:ss</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-warning">⏰ 顯示時間</button>
+                                </div>
+                            </form>
+                            <div id="timeOutput">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- practice7 end -->
+                <!-- practice8 -->
+                <div class="col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            8. 串接 Chuck Norris Jokes API
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 7. 串接 Chuck Norris Jokes API -->
+                            <div class="text-center pb-4">
+                                <a href="https://api.chucknorris.io/" target="_blank" rel="noopener"
+                                    title="Chuck Norris Jokes API">
+                                    <img width="40%"
+                                        src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png"
+                                        alt="">
+                                </a>
+                            </div>
+                            <p>
+                                使用
+                                <a href="https://api.chucknorris.io/" target="_blank" rel="noopener"> Chuck Norris Jokes
+                                    API </a>
+                                將取得到的笑話顯示在網頁上。
+                            </p>
+                            <button id="getJokeBtn" class="btn btn-primary mb-3">🤠 取得一個Chuck Norris Joke</button>
+                            <div id="jokeOutput">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- practice8 end -->
+                <!-- practice9 -->
+                <div class="col-md-12 my-3">
+                    <div class="card">
+                        <div class="card-header">
+                            9. 分數計算器與圖表輸出
+                        </div>
+                        <div class="card-body">
+                            <!-- TODO: 8. 分數計算器與圖表輸出 -->
+                            <div class="row">
+                                <div class="col-6">
+                                    <form id="scoreCalcForm">
+                                        <div class="mb-3">
+                                            <label for="chineseScoreInput" class="form-label">國文</label>
+                                            <input value="95" id="chineseScoreInput" type="number" class="form-control"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="englishScoreInput" class="form-label">英文</label>
+                                            <input value="92" id="englishScoreInput" type="number" class="form-control"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="mathScoreInput" class="form-label">數學</label>
+                                            <input value="98" id="mathScoreInput" type="number" class="form-control"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button class="btn btn-success">📝 計算成績</button>
+                                        </div>
+                                    </form>
+                                    <p>設計規則：</p>
+                                    <ul>
+                                        <li>平均分數達90分標記為A+，並使用
+                                            <a href="https://getbootstrap.com/docs/5.3/components/alerts/"
+                                                target="_blank" rel="noopener">
+                                                success alert
+                                            </a>
+                                            顯示。
+                                        </li>
+                                        <li>平均分數達80分標記為A。</li>
+                                        <li>平均分數達70分標記為B。</li>
+                                        <li>平均分數達60分標記為C。</li>
+                                        <li>平均分數不到60分標記為F，並使用
+                                            <a href="https://getbootstrap.com/docs/5.3/components/alerts/"
+                                                target="_blank" rel="noopener">
+                                                danger alert
+                                            </a>
+                                            顯示。
+                                        </li>
+                                        <li>搭配
+                                            <a href="https://www.chartjs.org/" target="_blank"
+                                                rel="noopener">Chart.js</a>
+                                            將各科分數以長條圖方式輸出。
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <p>輸出結果：</p>
+                                    <div id="scoreReportOutput"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- practice9 end -->
+            </div>
+        </div>
+    </section>
+    <!-- section end -->
+    <!-- footer -->
+    <footer class="text-center">
+        <p>Copyright &copy;2023 <a target="_blank" rel="noopener"
+                href="https://github.com/andy19910102/csie-f2e-js-basic-data-types">
+                Github Repository <i class="fa-brands fa-github-alt"></i></a> </p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- main.js -->
+    <script src="./javascripts/main.js"></script>
+</body>
+
+</html>
